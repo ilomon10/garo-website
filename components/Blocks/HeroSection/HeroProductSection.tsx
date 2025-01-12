@@ -2,6 +2,7 @@ import hero1 from "./hero-v1-flags-v3.webp";
 import hero2 from "./hero-v1-entitlements.webp";
 import hero3 from "./hero-v1-adoption-feedback.webp";
 import { nanoid } from "nanoid";
+import Image from "next/image";
 
 export const HeroProductSection = () => {
   return (
@@ -36,7 +37,7 @@ export const HeroProductSection = () => {
           { id: nanoid(), image: hero3 },
         ].map(({ id, image }) => (
           <div key={id} className="relative -ml-[6%]">
-            <img src={image.src} />
+            <Image src={image.src} alt="Hero image" />
             <div
               style={{
                 backgroundImage:

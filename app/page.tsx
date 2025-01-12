@@ -1,7 +1,6 @@
 import Footer from "@/components/Blocks/Footer";
 import HeroSectionSimpleCentred from "@/components/Blocks/HeroSection";
 import { Navbar } from "@/components/Blocks/Navbar";
-import Image from "next/image";
 
 export default function Home() {
   return (

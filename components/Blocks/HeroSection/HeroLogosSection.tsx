@@ -9,7 +9,9 @@ export const HeroLogosSection = () => {
   return (
     <div className="hero-logos-section">
       <div className="mt-5 flex justify-center items-center gap-x-1 sm:gap-x-3">
-        <span className="text-sm text-muted-foreground">Simple SDK's:</span>
+        <span className="text-sm text-muted-foreground">
+          Simple SDK&apos;s:
+        </span>
         <div className="flex gap-x-3">
           <SiTypescript className="text-blue-500" />
           <SiJavascript className="text-yellow-300" />
