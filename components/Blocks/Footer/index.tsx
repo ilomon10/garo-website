@@ -1,12 +1,10 @@
 import {
   SiAriakit,
   SiDiscord,
-  SiFacebook,
   SiGithub,
-  SiInstagram,
   SiX,
 } from "@icons-pack/react-simple-icons";
-import { CheckIcon, DotIcon, LinkedinIcon, RefreshCwIcon } from "lucide-react";
+import { CheckIcon, LinkedinIcon, RefreshCwIcon } from "lucide-react";
 import moment from "moment";
 import React from "react";
 
@@ -72,6 +70,10 @@ const sections: {
         prefix: "In Progress",
         href: "#",
       },
+      {
+        name: "Trust Center",
+        href: "#",
+      },
     ],
   },
 ];
@@ -89,12 +91,18 @@ const Footer = () => {
                   <p className="text-3xl font-semibold">Garoo</p>
                 </span>
               </div>
-              <a className="flex" href="#">
-                <span>
-                  <DotIcon className="text-green-500" />
-                </span>
-                <span>All system operational</span>
-              </a>
+              <div>
+                <a className="flex items-center mb-5" href="#">
+                  <span className="bg-green-500 h-[6px] w-[6px] rounded-full mr-2" />
+                  <span>All system operational</span>
+                </a>
+                <div className="text-muted-foreground text-xs">
+                  <p>Made in MDC</p>
+                  <p>
+                    Copyright &#169; 2022 &#8211; 2025 PT. Bingkai Indonesia
+                  </p>
+                </div>
+              </div>
             </div>
             <div className="grid grid-cols-4 gap-3 lg:gap-6">
               {sections.map((section, sectionIdx) => (
