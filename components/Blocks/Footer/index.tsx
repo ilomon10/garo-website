@@ -5,7 +5,6 @@ import {
   SiX,
 } from "@icons-pack/react-simple-icons";
 import { CheckIcon, LinkedinIcon, RefreshCwIcon } from "lucide-react";
-import moment from "moment";
 import React from "react";
 
 type Link = {
