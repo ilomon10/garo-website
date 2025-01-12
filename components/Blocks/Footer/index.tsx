@@ -6,7 +6,7 @@ import {
   SiInstagram,
   SiX,
 } from "@icons-pack/react-simple-icons";
-import { CheckIcon, LinkedinIcon, RefreshCwIcon } from "lucide-react";
+import { CheckIcon, DotIcon, LinkedinIcon, RefreshCwIcon } from "lucide-react";
 import moment from "moment";
 import React from "react";
 
@@ -89,28 +89,12 @@ const Footer = () => {
                   <p className="text-3xl font-semibold">Garoo</p>
                 </span>
               </div>
-              <ul className="flex items-center space-x-6 text-muted-foreground">
-                <li className="font-medium hover:text-primary">
-                  <a href="#">
-                    <SiInstagram className="size-6" />
-                  </a>
-                </li>
-                <li className="font-medium hover:text-primary">
-                  <a href="#">
-                    <SiFacebook className="size-6" />
-                  </a>
-                </li>
-                <li className="font-medium hover:text-primary">
-                  <a href="#">
-                    <SiGithub className="size-6" />
-                  </a>
-                </li>
-                <li className="font-medium hover:text-primary">
-                  <a href="#">
-                    <SiDiscord className="size-6" />
-                  </a>
-                </li>
-              </ul>
+              <a className="flex" href="#">
+                <span>
+                  <DotIcon className="text-green-500" />
+                </span>
+                <span>All system operational</span>
+              </a>
             </div>
             <div className="grid grid-cols-4 gap-3 lg:gap-6">
               {sections.map((section, sectionIdx) => (

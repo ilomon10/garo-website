@@ -1,8 +1,8 @@
+import { nanoid } from "nanoid";
+import Image from "next/image";
 import hero1 from "./hero-v1-flags-v3.webp";
 import hero2 from "./hero-v1-entitlements.webp";
 import hero3 from "./hero-v1-adoption-feedback.webp";
-import { nanoid } from "nanoid";
-import Image from "next/image";
 
 export const HeroProductSection = () => {
   return (
@@ -31,13 +31,16 @@ export const HeroProductSection = () => {
         ))}
       </div>
       <div className="max-w-[85%] flex">
-        {[
-          { id: nanoid(), image: hero1 },
-          { id: nanoid(), image: hero2 },
-          { id: nanoid(), image: hero3 },
-        ].map(({ id, image }) => (
+        {heroImages.map(({ id, image }) => (
           <div key={id} className="relative -ml-[6%]">
-            <Image src={image.src} alt="Hero image" />
+            <Image
+              src={image.src}
+              alt="Hero image"
+              width={888}
+              height={1200}
+              sizes="100vw"
+              priority={true}
+            />
             <div
               style={{
                 backgroundImage:
@@ -52,3 +55,9 @@ export const HeroProductSection = () => {
     </div>
   );
 };
+
+const heroImages = [
+  { id: nanoid(), image: hero1 },
+  { id: nanoid(), image: hero2 },
+  { id: nanoid(), image: hero3 },
+];
