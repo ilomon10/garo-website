@@ -49,12 +49,22 @@ const sections: {
   {
     title: "Compliance",
     links: [
-      { icon: <CheckIcon />, name: "CCPA", prefix: "Compliant", href: "#" },
-      { icon: <CheckIcon />, name: "GDPR", prefix: "Compliant", href: "#" },
       {
         icon: <CheckIcon />,
+        name: "CCPA",
+        prefix: "Compliant",
+        href: "#",
+      },
+      {
+        icon: <RefreshCwIcon />,
+        name: "GDPR",
+        prefix: "In Progress",
+        href: "#",
+      },
+      {
+        icon: <RefreshCwIcon />,
         name: "ISO 27001",
-        prefix: "Certified",
+        prefix: "In Progress",
         href: "#",
       },
       {
@@ -63,7 +73,12 @@ const sections: {
         prefix: "Certified",
         href: "#",
       },
-      { icon: <CheckIcon />, name: "SOC 2", prefix: "Certified", href: "#" },
+      {
+        icon: <RefreshCwIcon />,
+        name: "SOC 2",
+        prefix: "In Progress",
+        href: "#",
+      },
       {
         icon: <RefreshCwIcon />,
         name: "HIPAA",
@@ -96,7 +111,7 @@ const Footer = () => {
                   <span className="bg-green-500 h-[6px] w-[6px] rounded-full mr-2" />
                   <span>All system operational</span>
                 </a>
-                <div className="text-muted-foreground text-xs">
+                <div className="flex flex-col text-muted-foreground text-xs gap-2">
                   <p>Made in MDC</p>
                   <p>
                     Copyright &#169; 2022 &#8211; 2025 PT. Bingkai Indonesia
@@ -104,7 +119,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-4 gap-3 lg:gap-6">
+            <div className="grid grid-cols-4 gap-3 lg:gap-4">
               {sections.map((section, sectionIdx) => (
                 <div key={sectionIdx}>
                   <h3 className="mb-6 font-bold">{section.title}</h3>
@@ -113,7 +128,7 @@ const Footer = () => {
                       return (
                         <li
                           key={linkIdx}
-                          className="font-medium hover:text-primary"
+                          className="font-medium hover:text-primary whitespace-nowrap"
                         >
                           <a href={link.href} className="flex items-center">
                             {link.icon && (
@@ -123,7 +138,7 @@ const Footer = () => {
                             )}
                             <span className="mr-2">{link.name}</span>
                             {link.prefix && (
-                              <span className="text-xs text-slate-500">
+                              <span className="text-xs text-muted-foreground/50">
                                 {link.prefix}
                               </span>
                             )}
@@ -135,17 +150,6 @@ const Footer = () => {
                 </div>
               ))}
             </div>
-          </div>
-          <div className="mt-20 flex flex-col justify-between gap-4 border-t pt-8 text-center text-sm font-medium text-muted-foreground lg:flex-row lg:items-center lg:text-left">
-            <p>© {moment().format("YYYY")} Garoo. All rights reserved.</p>
-            <ul className="flex justify-center gap-4 lg:justify-start">
-              <li className="hover:text-primary">
-                <a href="#"> Terms and Conditions</a>
-              </li>
-              <li className="hover:text-primary">
-                <a href="#"> Privacy Policy</a>
-              </li>
-            </ul>
           </div>
         </footer>
       </div>
