@@ -3,23 +3,24 @@ import Image from "next/image";
 import hero1 from "./hero-v1-flags-v3.webp";
 import hero2 from "./hero-v1-entitlements.webp";
 import hero3 from "./hero-v1-adoption-feedback.webp";
+import { cx } from "class-variance-authority";
 
 export const HeroProductSection = () => {
   return (
     <div className="container md:max-w-[1024px] mx-auto flex flex-col items-center gap-y-6">
-      <div className="max-w-[77%] grid grid-cols-3 gap-x-[6rem]">
+      <div className="max-w-[77%] grid sm:grid-cols-3 gap-6">
         {[
           {
             id: nanoid(),
-            text: "Release features gradually with simple flags.",
+            text: "Daftar penandatangan per langganan mulai dari 10 penandatangan",
           },
           {
             id: nanoid(),
-            text: "Gate features based on customer subscriptions.",
+            text: "Halaman dokumen tidak terbatas dan multi signature",
           },
           {
             id: nanoid(),
-            text: "Iterate fast with adoption metrics and feedback.",
+            text: "Gratis backup dokumen tertanda-tangan mulai dari 1 bulan",
           },
         ].map(({ id, text }) => (
           <div
@@ -31,8 +32,8 @@ export const HeroProductSection = () => {
         ))}
       </div>
       <div className="max-w-[85%] flex">
-        {heroImages.map(({ id, image }) => (
-          <div key={id} className="relative -ml-[6%]">
+        {heroImages.map(({ id, image }, index) => (
+          <div key={id} className={"relative -ml-[6%]"} style={{}}>
             <Image
               src={image.src}
               alt="Hero image"

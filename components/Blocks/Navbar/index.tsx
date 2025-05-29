@@ -72,22 +72,6 @@ export const Navbar = () => {
             <div className="flex md:hidden mr-2 items-center gap-2">
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <span className="py-2 px-2 bg-gray-100 rounded-md">
-                    Pages
-                  </span>
-                </DropdownMenuTrigger>
-
-                <DropdownMenuContent align="start">
-                  {landings.map((page) => (
-                    <DropdownMenuItem key={page.id}>
-                      <Link href={page.route}>{page.title}</Link>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
-
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
                   <Button variant="outline" size="icon">
                     <MenuIcon className="h-5 w-5 rotate-0 scale-100" />
                   </Button>
@@ -117,8 +101,6 @@ export const Navbar = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>
-
-            <ThemeToggle />
           </div>
         </nav>
       </div>
