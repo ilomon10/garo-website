@@ -9,7 +9,7 @@ interface CodeBlockProps {
   className?: string;
 }
 
-export const CodeBlock: FC<CodeBlockProps> = ({ value, className }) => {
+export const CodeBlock: FC<CodeBlockProps> = ({ value }) => {
   return (
     <SyntaxHighlighter
       language="javascript"

@@ -7,7 +7,6 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
-import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { nanoid } from "nanoid";
 import { SiAriakit } from "@icons-pack/react-simple-icons";
 

@@ -3,7 +3,6 @@ import Image from "next/image";
 import hero1 from "./hero-v1-flags-v3.webp";
 import hero2 from "./hero-v1-entitlements.webp";
 import hero3 from "./hero-v1-adoption-feedback.webp";
-import { cx } from "class-variance-authority";
 
 export const HeroProductSection = () => {
   return (
@@ -32,7 +31,7 @@ export const HeroProductSection = () => {
         ))}
       </div>
       <div className="max-w-[85%] flex">
-        {heroImages.map(({ id, image }, index) => (
+        {heroImages.map(({ id, image }) => (
           <div key={id} className={"relative -ml-[6%]"} style={{}}>
             <Image
               src={image.src}

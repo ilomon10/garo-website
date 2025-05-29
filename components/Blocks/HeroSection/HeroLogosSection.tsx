@@ -3,7 +3,7 @@ import {
   SiJavascript,
   SiNodedotjs,
 } from "@icons-pack/react-simple-icons";
-import { ChevronRightIcon, SlashIcon } from "lucide-react";
+import { ChevronRightIcon } from "lucide-react";
 
 export const HeroLogosSection = () => {
   return (
