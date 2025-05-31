@@ -1,0 +1,14 @@
+.product-shade {
+  background-image: linear-gradient(
+      90deg,
+      color-mix(in oklch, var(--background) 0%, transparent) 67%,
+      var(--background) 99%
+    ),
+    radial-gradient(
+      circle at 0 0,
+      color-mix(in oklch, var(--background) 0%, transparent) 49%,
+      var(--background) 70%
+    );
+  position: absolute;
+  inset: 0;
+}

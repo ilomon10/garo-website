@@ -3,6 +3,7 @@ import Image from "next/image";
 import hero1 from "./assets/hero-v1-flags-v3.webp";
 import hero2 from "./assets/hero-v1-entitlements.webp";
 import hero3 from "./assets/hero-v1-adoption-feedback.webp";
+import "./assets/product-section-style.css";
 
 export const HeroProductSection = () => {
   return (
@@ -41,14 +42,7 @@ export const HeroProductSection = () => {
               sizes="100vw"
               priority={true}
             />
-            <div
-              style={{
-                backgroundImage:
-                  "linear-gradient(90deg, hsl(var(--background) / 0) 67%, hsl(var(--background)) 99%), radial-gradient(circle at 0 0, hsl(var(--background)/0) 49%, hsl(var(--background)) 70%)",
-                position: "absolute",
-                inset: "0%",
-              }}
-            />
+            <div className="product-shade" />
           </div>
         ))}
       </div>
