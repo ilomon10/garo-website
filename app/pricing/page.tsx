@@ -12,80 +12,12 @@ import { Badge } from "@/components/ui/badge";
 import { cx } from "class-variance-authority";
 import { Navbar } from "@/components/Blocks/Navbar";
 import Footer from "@/components/Blocks/Footer";
+import { Metadata } from "next";
 
-const pricingPlans = [
-  {
-    name: "Free",
-    price: "$0",
-    frequency: "Free forever",
-    highlighted: false,
-    hostedByUs: true,
-    features: [
-      "5 standard documents per month",
-      "Up to 10 recipients per document",
-      "No credit card required",
-    ],
-    cta: "Get started",
-  },
-  // {
-  //   name: "Individual",
-  //   price: "$25",
-  //   frequency: "per/month",
-  //   billedYearly: {
-  //     text: "Billed yearly",
-  //     save: "$60",
-  //   },
-  //   highlighted: false,
-  //   hostedByUs: true,
-  //   features: [
-  //     "Unlimited Documents",
-  //     "API Access for Personal Use",
-  //     "Email Support",
-  //     "Premium Profile Name",
-  //   ],
-  //   cta: "Get started",
-  // },
-  {
-    name: "Teams",
-    price: "$8",
-    frequency: "per/month/user",
-    billedYearly: {
-      text: "Billed yearly",
-      save: "$120",
-    },
-    highlighted: true,
-    hostedByUs: true,
-    features: [
-      "5 Users Minimum",
-      "Add More Users Anytime",
-      "Unlimited Documents",
-      "API Access for Automation",
-      "Email Support",
-      "Embedding",
-    ],
-    cta: "Get started",
-  },
-  {
-    name: "Platform",
-    price: "$250",
-    frequency: "per/month",
-    billedYearly: {
-      text: "Billed yearly",
-      save: "$600",
-    },
-    highlighted: false,
-    hostedByUs: true,
-    features: [
-      "Unlimited Documents",
-      "Unlimited API Access",
-      "1 Team Included",
-      "Whitelabeled Embedding",
-      "Email and Discord Support",
-      "Integration Support",
-    ],
-    cta: "Get started",
-  },
-];
+export const metadata: Metadata = {
+  title: "Garoo",
+  description: "Make a trusted signature for your digital copies.",
+};
 
 export default function PricingPage() {
   return (
@@ -199,3 +131,77 @@ export default function PricingPage() {
     </div>
   );
 }
+
+const pricingPlans = [
+  {
+    name: "Free",
+    price: "$0",
+    frequency: "Free forever",
+    highlighted: false,
+    hostedByUs: true,
+    features: [
+      "5 standard documents per month",
+      "Up to 10 recipients per document",
+      "No credit card required",
+    ],
+    cta: "Get started",
+  },
+  // {
+  //   name: "Individual",
+  //   price: "$25",
+  //   frequency: "per/month",
+  //   billedYearly: {
+  //     text: "Billed yearly",
+  //     save: "$60",
+  //   },
+  //   highlighted: false,
+  //   hostedByUs: true,
+  //   features: [
+  //     "Unlimited Documents",
+  //     "API Access for Personal Use",
+  //     "Email Support",
+  //     "Premium Profile Name",
+  //   ],
+  //   cta: "Get started",
+  // },
+  {
+    name: "Teams",
+    price: "$8",
+    frequency: "per/month/user",
+    billedYearly: {
+      text: "Billed yearly",
+      save: "$120",
+    },
+    highlighted: true,
+    hostedByUs: true,
+    features: [
+      "5 Users Minimum",
+      "Add More Users Anytime",
+      "Unlimited Documents",
+      "API Access for Automation",
+      "Email Support",
+      "Embedding",
+    ],
+    cta: "Get started",
+  },
+  {
+    name: "Platform",
+    price: "$250",
+    frequency: "per/month",
+    billedYearly: {
+      text: "Billed yearly",
+      save: "$600",
+    },
+    highlighted: false,
+    hostedByUs: true,
+    features: [
+      "Unlimited Documents",
+      "Unlimited API Access",
+      "1 Team Included",
+      "Whitelabeled Embedding",
+      "Email and Discord Support",
+      "Integration Support",
+    ],
+    cta: "Get started",
+  },
+];

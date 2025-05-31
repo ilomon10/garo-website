@@ -12,8 +12,8 @@ export const SVGlineToEndUser: React.FC<{ className?: string }> = ({
         className="schema-dash-animation"
         d="M1 1H39.2873L61.1657 9H91M1 37H39.2873L61.1657 29H91"
         stroke="white"
-        stroke-linecap="round"
-        stroke-dasharray="4 4"
+        strokeLinecap="round"
+        strokeDasharray="4 4"
       />
     </svg>
   );
