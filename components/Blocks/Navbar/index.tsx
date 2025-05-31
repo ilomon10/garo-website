@@ -9,16 +9,18 @@ import {
 import Link from "next/link";
 import { nanoid } from "nanoid";
 import { SiAriakit } from "@icons-pack/react-simple-icons";
+import { GarooLogo } from "../GarooLogo";
+import { GarooLogoWhite } from "../GarooLogoWhite";
 
 export const Navbar = () => {
   return (
     <section className="py-4">
       <div className="container px-4 mx-auto">
         <nav className="flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <SiAriakit size={36} />
+          <Link href={"/"} className="flex items-center gap-3">
+            <GarooLogoWhite className="size-9" />
             <span className="text-xl font-bold">Garoo</span>
-          </div>
+          </Link>
           <nav
             aria-label="Main"
             data-orientation="horizontal"
@@ -31,42 +33,44 @@ export const Navbar = () => {
                 className="group flex flex-1 list-none items-center justify-center space-x-1"
                 dir="ltr"
               >
-                <li>
-                  <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
-                      <Button variant="ghost">
-                        Features
-                        <ChevronDownIcon />
-                      </Button>
-                    </DropdownMenuTrigger>
+                {nav_items.map(({ id, title, items, route }) => {
+                  return (
+                    <li key={id}>
+                      {!items && (
+                        <Button variant="ghost" asChild>
+                          <Link href={route}>{title}</Link>
+                        </Button>
+                      )}
+                      {items && (
+                        <DropdownMenu>
+                          <DropdownMenuTrigger asChild>
+                            <Button variant="ghost">
+                              {title}
+                              <ChevronDownIcon />
+                            </Button>
+                          </DropdownMenuTrigger>
 
-                    <DropdownMenuContent align="start">
-                      {landings.map((page) => (
-                        <DropdownMenuItem key={page.id}>
-                          <Link href={page.route}>{page.title}</Link>
-                        </DropdownMenuItem>
-                      ))}
-                    </DropdownMenuContent>
-                  </DropdownMenu>
-                </li>
-                <li>
-                  <Button variant={"ghost"}>Products</Button>
-                </li>
-                <li>
-                  <Button variant={"ghost"}>Resources</Button>
-                </li>
-                <li>
-                  <Button variant={"ghost"}>Contact</Button>
-                </li>
+                          <DropdownMenuContent align="start">
+                            {items.map((page) => (
+                              <DropdownMenuItem key={page.id}>
+                                <Link href={page.route}>{page.title}</Link>
+                              </DropdownMenuItem>
+                            ))}
+                          </DropdownMenuContent>
+                        </DropdownMenu>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </div>
             <div className="absolute left-0 top-full flex justify-center"></div>
           </nav>
           <div className="flex items-center">
             <Button variant="secondary" className="hidden md:block px-2">
-              Login
+              Masuk
             </Button>
-            <Button className="hidden md:block ml-2 mr-2">Get Started</Button>
+            <Button className="hidden md:block ml-2 mr-2">Coba Sekarang</Button>
 
             <div className="flex md:hidden mr-2 items-center gap-2">
               <DropdownMenu>
@@ -107,50 +111,38 @@ export const Navbar = () => {
   );
 };
 
-const landings = [
+const nav_items = [
   {
     id: nanoid(),
-    title: "Landing 01",
-    route: "/project-management",
+    title: "Solutions",
+    route: "/solutions",
+    items: [
+      {
+        id: nanoid(),
+        title: "Digital Signature",
+        route: "/solution/digital-signature",
+      },
+      {
+        id: nanoid(),
+        title: "Headless Application",
+        route: "/headless-application",
+      },
+    ],
   },
   {
     id: nanoid(),
-    title: "Landing 02",
-    route: "/crm-landing",
+    title: "Resources",
+    route: "/resources",
+  },
+
+  {
+    id: nanoid(),
+    title: "Pricing",
+    route: "/pricing",
   },
   {
     id: nanoid(),
-    title: "Landing 03",
-    route: "/ai-content-landing",
-  },
-  {
-    id: nanoid(),
-    title: "Landing 04",
-    route: "/new-intro-landing",
-  },
-  {
-    id: nanoid(),
-    title: "Landing 05",
-    route: "/about-us-landing",
-  },
-  {
-    id: nanoid(),
-    title: "Landing 06",
-    route: "/contact-us-landing",
-  },
-  {
-    id: nanoid(),
-    title: "Landing 07",
-    route: "/faqs-landing",
-  },
-  {
-    id: nanoid(),
-    title: "Landing 08",
-    route: "/pricing-landing",
-  },
-  {
-    id: nanoid(),
-    title: "Landing 09",
-    route: "/career-landing",
+    title: "Contacts",
+    route: "/",
   },
 ];

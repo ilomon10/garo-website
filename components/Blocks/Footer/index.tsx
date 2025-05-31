@@ -6,6 +6,7 @@ import {
 } from "@icons-pack/react-simple-icons";
 import { CheckIcon, LinkedinIcon, RefreshCwIcon } from "lucide-react";
 import React from "react";
+import { GarooLogoWhite } from "../GarooLogoWhite";
 
 type Link = {
   icon?: JSX.Element;
@@ -98,16 +99,16 @@ const Footer = () => {
       <div className="container max-w-[1024px] mx-auto">
         <footer>
           <div className="flex flex-col justify-between gap-10 text-center lg:flex-row lg:text-left">
-            <div className="flex max-sm:mx-auto max-w-96 shrink flex-col items-center justify-between gap-6 lg:items-start">
+            <div className="flex sm:mx-auto max-w-96 shrink flex-col items-center justify-between gap-6 lg:items-start">
               <div>
                 <span className="flex items-center gap-4 ">
-                  <SiAriakit size={36} />
+                  <GarooLogoWhite className="size-9" />
                   <p className="text-3xl font-semibold">Garoo</p>
                 </span>
               </div>
               <div>
                 <a
-                  className="flex justify-center md:justify-start items-center mb-5"
+                  className="flex justify-center lg:justify-start items-center mb-5"
                   href="#"
                 >
                   <span className="bg-green-500 h-[6px] w-[6px] rounded-full mr-2" />
@@ -116,7 +117,8 @@ const Footer = () => {
                 <div className="flex flex-col text-muted-foreground text-xs gap-2">
                   <p>Made in MDC</p>
                   <p>
-                    Copyright &#169; 2022 &#8211; 2025 PT. Bingkai Indonesia
+                    Copyright &#169; 2022 &#8211; 2025 PT. Bingkai Teknologi
+                    Indonesia
                   </p>
                 </div>
               </div>
