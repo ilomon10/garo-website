@@ -24,7 +24,7 @@ export const HeroLogosSection = () => {
             href="#"
           >
             Installation Guide
-            <ChevronRightIcon className="flex-shrink-0 w-4 h-4" />
+            <ChevronRightIcon className="shrink-0 w-4 h-4" />
           </a>
         </div>
       </div>

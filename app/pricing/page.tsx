@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function PricingPage() {
   return (
-    <div className="items-center min-h-screen gap-16 font-[family-name:var(--font-geist-sans)]">
+    <div className="items-center min-h-screen gap-16">
       <Navbar />
       <header className="text-center mt-36 mb-12 md:mb-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Pricing</h1>
@@ -73,7 +73,7 @@ export default function PricingPage() {
                 </div>
               )}
             </CardHeader>
-            <CardContent className="p-6 flex-grow">
+            <CardContent className="p-6 grow">
               {plan.hostedByUs && (
                 <Badge
                   variant={plan.highlighted ? "default" : "secondary"}
@@ -85,7 +85,7 @@ export default function PricingPage() {
               <ul className="space-y-3">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start">
-                    <CheckCircle2 className="w-5 h-5 mr-2 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 mr-2 shrink-0 mt-0.5" />
                     <span className="text-sm">{feature}</span>
                   </li>
                 ))}
@@ -107,7 +107,7 @@ export default function PricingPage() {
             </h2>
           </CardHeader>
           <CardContent className="flex gap-6">
-            <div className="flex-grow">
+            <div className="grow">
               <p className="max-w-3xl mb-6 text-sm md:text-base">
                 Our Enterprise License is ideal for large organizations
                 switching to Garoo. It&apos;s available for cloud or self-hosted
