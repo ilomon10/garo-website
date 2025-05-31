@@ -1,8 +1,8 @@
 import { nanoid } from "nanoid";
 import Image from "next/image";
-import hero1 from "./hero-v1-flags-v3.webp";
-import hero2 from "./hero-v1-entitlements.webp";
-import hero3 from "./hero-v1-adoption-feedback.webp";
+import hero1 from "./assets/hero-v1-flags-v3.webp";
+import hero2 from "./assets/hero-v1-entitlements.webp";
+import hero3 from "./assets/hero-v1-adoption-feedback.webp";
 
 export const HeroProductSection = () => {
   return (

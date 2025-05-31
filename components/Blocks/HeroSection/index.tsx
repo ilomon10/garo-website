@@ -3,6 +3,7 @@ import { HeroProductSection } from "./HeroProductSection";
 import { HeroLogosSection } from "./HeroLogosSection";
 import { HeroCodeSection } from "./HeroCodeSection";
 import { ChevronRightIcon } from "lucide-react";
+import { HeroSemanticDiagramSection } from "./HeroSemanticDiagramSection";
 
 export default function HeroSectionSimpleCentred() {
   return (
@@ -37,14 +38,42 @@ export default function HeroSectionSimpleCentred() {
         </div>
         {/* Buttons */}
         <div className="mt-8 gap-3 flex justify-center">
-          <Button size={"lg"}>Try free now</Button>
+          <Button size={"lg"}>Coba sekarang</Button>
           <Button size={"lg"} variant={"outline"}>
-            Learn more
+            Baca selengkapnya
           </Button>
         </div>
         {/* End Buttons */}
       </div>
+
       <HeroProductSection />
+
+      <div className="mb-24 py-24 bg-foreground/[0.02]">
+        {/* Title */}
+        <div className="container mx-auto mt-5 text-center">
+          <h1 className="scroll-m-20 text-3xl md:text-4xl  font-extrabold tracking-tight lg:text-5xl">
+            Bagaimana dokumen Anda diproses?
+          </h1>
+        </div>
+        {/* End Title */}
+        <div className="container mx-auto mt-5 text-center ">
+          <p className="text-lg md:text-xl text-muted-foreground">
+            Sekali hit mendapatkan tanda tangan elektronik, signatur gambar,
+            stempel waktu dan masih banyak lagi!
+          </p>
+        </div>
+        {/* Buttons */}
+        <div className="mt-8 gap-3 flex justify-center">
+          <Button size={"lg"} variant={"outline"}>
+            Baca selengkapnya
+          </Button>
+        </div>
+        {/* End Buttons */}
+        <div className="mt-16">
+          <HeroSemanticDiagramSection />
+        </div>
+      </div>
+
       <HeroLogosSection />
       <HeroCodeSection />
     </>
