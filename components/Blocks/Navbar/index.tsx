@@ -8,8 +8,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
 import { nanoid } from "nanoid";
-import { SiAriakit } from "@icons-pack/react-simple-icons";
-import { GarooLogo } from "../GarooLogo";
 import { GarooLogoWhite } from "../GarooLogoWhite";
 
 export const Navbar = () => {

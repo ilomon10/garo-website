@@ -178,9 +178,9 @@ export default function PricingPage() {
             <div className="flex-grow">
               <p className="max-w-3xl mb-6 text-sm md:text-base">
                 Our Enterprise License is ideal for large organizations
-                switching to Garoo. It's available for cloud or self-hosted
+                switching to Garoo. It&apos;s available for cloud or self-hosted
                 setups, offering a full range of compliance and admin features.
-                Contact us for a custom offer based on your organization's
+                Contact us for a custom offer based on your organization&apos;s
                 needs.
               </p>
               <div className="text-sm text-gray-500">

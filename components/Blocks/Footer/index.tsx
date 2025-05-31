@@ -1,9 +1,4 @@
-import {
-  SiAriakit,
-  SiDiscord,
-  SiGithub,
-  SiX,
-} from "@icons-pack/react-simple-icons";
+import { SiDiscord, SiGithub, SiX } from "@icons-pack/react-simple-icons";
 import { CheckIcon, LinkedinIcon, RefreshCwIcon } from "lucide-react";
 import React from "react";
 import { GarooLogoWhite } from "../GarooLogoWhite";
