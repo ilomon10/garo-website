@@ -1,0 +1,22 @@
+:root {
+  --product-shade-color-background-0: color-mix(
+    in oklch,
+    var(--background) 0%,
+    transparent
+  );
+}
+
+.product-shade {
+  background-image: linear-gradient(
+      90deg,
+      var(--product-shade-color-background-0) 67%,
+      var(--background) 99%
+    ),
+    radial-gradient(
+      circle at 0 0,
+      var(--product-shade-color-background-0) 49%,
+      var(--background) 70%
+    );
+  position: absolute;
+  inset: 0;
+}

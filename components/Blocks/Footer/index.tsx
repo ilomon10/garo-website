@@ -1,11 +1,7 @@
-import {
-  SiAriakit,
-  SiDiscord,
-  SiGithub,
-  SiX,
-} from "@icons-pack/react-simple-icons";
+import { SiDiscord, SiGithub, SiX } from "@icons-pack/react-simple-icons";
 import { CheckIcon, LinkedinIcon, RefreshCwIcon } from "lucide-react";
 import React from "react";
+import { GarooLogoWhite } from "../GarooLogoWhite";
 
 type Link = {
   icon?: JSX.Element;
@@ -98,29 +94,33 @@ const Footer = () => {
       <div className="container max-w-[1024px] mx-auto">
         <footer>
           <div className="flex flex-col justify-between gap-10 text-center lg:flex-row lg:text-left">
-            <div className="flex max-w-96 shrink flex-col items-center justify-between gap-6 lg:items-start">
+            <div className="flex sm:mx-auto max-w-96 shrink flex-col items-center justify-between gap-6 lg:items-start">
               <div>
                 <span className="flex items-center gap-4 ">
-                  <SiAriakit size={36} />
+                  <GarooLogoWhite className="size-9" />
                   <p className="text-3xl font-semibold">Garoo</p>
                 </span>
               </div>
               <div>
-                <a className="flex items-center mb-5" href="#">
+                <a
+                  className="flex justify-center lg:justify-start items-center mb-5"
+                  href="#"
+                >
                   <span className="bg-green-500 h-[6px] w-[6px] rounded-full mr-2" />
                   <span>All system operational</span>
                 </a>
                 <div className="flex flex-col text-muted-foreground text-xs gap-2">
                   <p>Made in MDC</p>
                   <p>
-                    Copyright &#169; 2022 &#8211; 2025 PT. Bingkai Indonesia
+                    Copyright &#169; 2022 &#8211; 2025 PT. Bingkai Teknologi
+                    Indonesia
                   </p>
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-4 gap-3 lg:gap-4">
+            <div className="px-4 grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-4 ">
               {sections.map((section, sectionIdx) => (
-                <div key={sectionIdx}>
+                <div key={sectionIdx} className="text-left mb-6">
                   <h3 className="mb-6 font-bold">{section.title}</h3>
                   <ul className="space-y-4 text-sm text-muted-foreground">
                     {section.links.map((link, linkIdx) => {
