@@ -13,7 +13,7 @@ import { GarooLogoWhite } from "../GarooLogoWhite";
 export const Navbar = () => {
   return (
     <section className="py-4">
-      <div className="container px-4 mx-auto">
+      <div className="container max-w-[1024px] px-4 mx-auto">
         <nav className="flex items-center justify-between">
           <Link href={"/"} className="flex items-center gap-3">
             <GarooLogoWhite className="size-9" />

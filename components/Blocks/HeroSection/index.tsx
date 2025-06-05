@@ -48,16 +48,16 @@ export default function HeroSectionSimpleCentred() {
 
       <HeroProductSection />
 
-      <div className="mb-24 py-24 bg-foreground/[0.02]">
+      <div className="mb-24 py-24 bg-foreground/[0.01]">
         {/* Title */}
         <div className="container mx-auto mt-5 text-center">
-          <h1 className="scroll-m-20 text-3xl md:text-4xl  font-extrabold tracking-tight lg:text-5xl">
+          <h1 className="scroll-m-20 text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight">
             Bagaimana dokumen Anda diproses?
           </h1>
         </div>
         {/* End Title */}
         <div className="container mx-auto mt-5 text-center ">
-          <p className="text-lg md:text-xl text-muted-foreground">
+          <p className="text-md md:text-lg text-muted-foreground">
             Sekali hit mendapatkan tanda tangan elektronik, signatur gambar,
             stempel waktu dan masih banyak lagi!
           </p>
