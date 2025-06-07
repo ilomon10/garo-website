@@ -91,7 +91,7 @@ const sections: {
 const Footer = () => {
   return (
     <section className="py-32">
-      <div className="container max-w-[1024px] mx-auto">
+      <div className="container max-w-[1024px] mx-auto px-4">
         <footer>
           <div className="flex flex-col justify-between gap-10 text-center lg:flex-row lg:text-left">
             <div className="flex sm:mx-auto max-w-96 shrink flex-col items-center justify-between gap-6 lg:items-start">

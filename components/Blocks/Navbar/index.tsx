@@ -129,6 +129,11 @@ const nav_items = [
   },
   {
     id: nanoid(),
+    title: "Integrate",
+    route: "/integrate",
+  },
+  {
+    id: nanoid(),
     title: "Resources",
     route: "/resources",
   },
@@ -137,10 +142,5 @@ const nav_items = [
     id: nanoid(),
     title: "Pricing",
     route: "/pricing",
-  },
-  {
-    id: nanoid(),
-    title: "Contacts",
-    route: "/",
   },
 ];

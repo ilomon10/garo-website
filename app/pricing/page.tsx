@@ -98,7 +98,7 @@ export default function PricingPage() {
         ))}
       </div>
 
-      <div className="container mx-auto mt-16 md:mt-24 rounded-xl text-center md:text-left">
+      <div className="container max-w-[1024px] mx-auto mt-16 md:mt-24 rounded-xl text-center md:text-left">
         <Card className="p-6">
           <CardHeader>
             <h2 className="max-w-3xl text-2xl font-bold">
