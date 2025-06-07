@@ -9,7 +9,7 @@ export function CTASection() {
           Ready to Supercharge Document Signing?
         </h2>
         <p className="text-lg md:text-lg text-gray-400 max-w-3xl mx-auto mb-10">
-          Empower your team with Documenso's easy-to-integrate signing
+          Empower your team with Documenso&#39;s easy-to-integrate signing
           experience. Fast deployment, enhanced security, and improved
           efficiency are just a click away.
         </p>

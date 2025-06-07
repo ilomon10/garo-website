@@ -101,52 +101,52 @@ const MockWorkflowDiagram = () => (
 const MockCodeSnippet = () => (
   <pre className="bg-[#111111] p-3 rounded-md text-[10px] text-gray-400 overflow-x-auto">
     <code>
-      <span className="text-purple-400">"directLink"</span>:{" "}
-      <span className="text-blue-400">"..."</span>,
+      <span className="text-purple-400">{`"directLink"`}</span>:{" "}
+      <span className="text-blue-400">{`"..."`}</span>,
       <br />
-      <span className="text-purple-400">"fields"</span>: [
+      <span className="text-purple-400">{`"fields"`}</span>: [
       <br />
       {"  "}
       {"{"}
       <br />
       {"    "}
-      <span className="text-purple-400">"id"</span>:{" "}
+      <span className="text-purple-400">{`"id"`}</span>:{" "}
       <span className="text-green-400">0</span>,
       <br />
       {"    "}
-      <span className="text-purple-400">"recipientId"</span>:{" "}
+      <span className="text-purple-400">{`"recipientId"`}</span>:{" "}
       <span className="text-green-400">0</span>,
       <br />
       {"    "}
-      <span className="text-purple-400">"type"</span>:{" "}
-      <span className="text-blue-400">"SIGNATURE"</span>,
+      <span className="text-purple-400">{`"type"`}</span>:{" "}
+      <span className="text-blue-400">{`"SIGNATURE"`}</span>,
       <br />
       {"    "}
-      <span className="text-purple-400">"page"</span>:{" "}
+      <span className="text-purple-400">{`"page"`}</span>:{" "}
       <span className="text-green-400">0</span>,
       <br />
       {"    "}
-      <span className="text-purple-400">"positionX"</span>:{" "}
-      <span className="text-blue-400">"string"</span>,
+      <span className="text-purple-400">{`"positionX"`}</span>:{" "}
+      <span className="text-blue-400">{`"string"`}</span>,
       <br />
       {"    "}
-      <span className="text-purple-400">"positionY"</span>:{" "}
-      <span className="text-blue-400">"string"</span>,
+      <span className="text-purple-400">{`"positionY"`}</span>:{" "}
+      <span className="text-blue-400">{`"string"`}</span>,
       <br />
       {"    "}
-      <span className="text-purple-400">"width"</span>:{" "}
-      <span className="text-blue-400">"string"</span>,
+      <span className="text-purple-400">{`"width"`}</span>:{" "}
+      <span className="text-blue-400">{`"string"`}</span>,
       <br />
       {"    "}
-      <span className="text-purple-400">"height"</span>:{" "}
-      <span className="text-blue-400">"string"</span>
+      <span className="text-purple-400">{`"height"`}</span>:{" "}
+      <span className="text-blue-400">{`"string"`}</span>
       <br />
       {"  "}
       {"}"}
       <br />
       ],
       <br />
-      <span className="text-purple-400">"recipient"</span>: [ ... ]
+      <span className="text-purple-400">{`"recipient"`}</span>: [ ... ]
     </code>
   </pre>
 );

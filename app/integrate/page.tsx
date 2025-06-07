@@ -22,7 +22,7 @@ export default function IntegratePage() {
         <p className="text-lg max-w-3xl mx-auto">
           Enterprise-grade signing infrastructure that scales with your needs.
           Let Documenso power your signing flows or seamlessly integrate with
-          your organization's tools.
+          your organization&#39;s tools.
         </p>
       </header>
 

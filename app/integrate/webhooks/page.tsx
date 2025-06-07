@@ -1,25 +1,10 @@
-import {
-  CheckCircle2,
-  CodeIcon,
-  ExternalLink,
-  GitForkIcon,
-} from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardFooter,
-} from "@/components/ui/card";
-import Link from "next/link";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { cx } from "class-variance-authority";
 import { Navbar } from "@/components/Blocks/Navbar";
 import Footer from "@/components/Blocks/Footer";
 import { Metadata } from "next";
 import { CTASection } from "@/components/Blocks/cta-section/cta-section";
-import ApiFeaturesSection from "@/components/pages-blocks/integrate/api-features-section";
 import WebhookFeaturesSection from "@/components/pages-blocks/integrate/webhook-features-section";
 
 export const metadata: Metadata = {

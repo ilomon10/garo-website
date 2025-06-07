@@ -1,20 +1,8 @@
-import {
-  CheckCircle2,
-  CodeIcon,
-  ExternalLink,
-  GitForkIcon,
-} from "lucide-react";
+import { CodeIcon, GitForkIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardFooter,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
-import { cx } from "class-variance-authority";
 import { Navbar } from "@/components/Blocks/Navbar";
 import Footer from "@/components/Blocks/Footer";
 import { Metadata } from "next";
