@@ -39,7 +39,6 @@ export const HeroProductSection = () => {
               alt="Hero image"
               width={888}
               height={1200}
-              sizes="100vw"
               priority={true}
             />
             <div className="product-shade" />
